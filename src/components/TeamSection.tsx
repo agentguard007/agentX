@@ -1,39 +1,42 @@
 import React from 'react';
 import { Linkedin, Mail } from 'lucide-react';
 
+// Use this for base path handling in development vs production
+const BASE_PATH = import.meta.env.DEV ? '' : '/agentX';
+
 const TeamSection = () => {
   const team = [
     {
-      name: 'Alex Chen',
+      name: 'Aadesh Ingle',
       role: 'Co-Founder & CEO',
-      image: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      bio: 'Former AI safety researcher at OpenAI with expertise in alignment and monitoring systems. PhD in Computer Science from Stanford University.',
-      linkedin: '#',
-      email: 'alex@NeurAlign.ai'
+      image: `${BASE_PATH}/images/aadesh-ingle.jpg`,
+      bio: 'Experienced software engineer with a focus on AI and machine learning applications. Former engineer at Microsoft with a background in building scalable systems and applications.',
+      linkedin: 'https://www.linkedin.com/in/aadesh-ingle/',
+      email: 'adesh.ingle74@gmail.com'
     },
     {
-      name: 'Priya Sharma',
+      name: 'Abhay Kaushik',
       role: 'Co-Founder & CTO',
-      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      bio: 'ML engineer with 10+ years of experience building AI systems at Google Brain. Specialized in designing monitoring and reliability frameworks.',
-      linkedin: '#',
-      email: 'priya@NeurAlign.ai'
+      image: `${BASE_PATH}/images/abhay-kaushik.jpg`,
+      bio: 'Software engineer with experience in AI and machine learning systems development. Passionate about creating secure and reliable technological solutions.',
+      linkedin: 'https://www.linkedin.com/in/abhay-kaushik/',
+      email: 'abhay.gyanbharati@gmail.com'
     },
     {
-      name: 'David Park',
+      name: 'Pranshu Nema',
       role: 'Co-Founder & Head of Product',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      bio: 'Former product leader at Microsoft responsible for enterprise AI solutions. MBA from Harvard Business School and BS in Computer Engineering.',
-      linkedin: '#',
-      email: 'david@NeurAlign.ai'
+      image: `${BASE_PATH}/images/pranshu-nema.jpg`,
+      bio: 'Skilled product developer and engineer with a background in creating efficient solutions. Experienced in leading technical teams and delivering innovative products.',
+      linkedin: 'https://www.linkedin.com/in/pranshu-nema/',
+      email: 'pranshunema007@gmail.com'
     },
     {
-      name: 'Maya Johnson',
+      name: 'Meet Patel',
       role: 'Co-Founder & Head of Research',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      bio: 'Leading researcher in agent systems evaluation methodologies. Published numerous papers on LLM security and alignment at DeepMind.',
-      linkedin: '#',
-      email: 'maya@NeurAlign.ai'
+      image: `${BASE_PATH}/images/meet-patel.jpg`,
+      bio: 'Research-focused engineer with expertise in AI systems and data analysis. Committed to developing cutting-edge solutions for complex technical challenges.',
+      linkedin: 'https://www.linkedin.com/in/meetdpatel18/',
+      email: 'meetdpatel18@gmail.com'
     }
   ];
 
