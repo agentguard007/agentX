@@ -1,40 +1,44 @@
 import React from 'react';
 import { Linkedin, Mail } from 'lucide-react';
 
-// Use this for base path handling in development vs production
-const BASE_PATH = import.meta.env.DEV ? '' : '/agentX';
-
+// Simple check to determine if we're running locally
+const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+const BASE_PATH = isLocalhost ? '' : '/agentX';
+import aadeshImage from '../../images/aadesh-ingle.jpg';
+import abhayImage from '../../images/abhay-kaushik.jpg';
+import pranshuImage from '../../images/pranshu-nema.jpg';
+import meetImage from '../../images/meet-patel.jpg';
 const TeamSection = () => {
   const team = [
     {
       name: 'Aadesh Ingle',
-      role: 'Co-Founder & CEO',
-      image: `${BASE_PATH}/images/aadesh-ingle.jpg`,
-      bio: 'Experienced software engineer with a focus on AI and machine learning applications. Former engineer at Microsoft with a background in building scalable systems and applications.',
+      role: 'Co-Founder & CTO',
+      image: aadeshImage,
+      bio: 'Machine Learning Engineer specializing in Generative AI, LLMs and AI Agents. Experienced in building AI-driven solutions.',
       linkedin: 'https://www.linkedin.com/in/aadesh-ingle/',
       email: 'adesh.ingle74@gmail.com'
     },
     {
       name: 'Abhay Kaushik',
-      role: 'Co-Founder & CTO',
-      image: `${BASE_PATH}/images/abhay-kaushik.jpg`,
+      role: 'Co-Founder & Machine Learning Research Engineer',
+      image: abhayImage,
       bio: 'Software engineer with experience in AI and machine learning systems development. Passionate about creating secure and reliable technological solutions.',
       linkedin: 'https://www.linkedin.com/in/abhay-kaushik/',
       email: 'abhay.gyanbharati@gmail.com'
     },
     {
       name: 'Pranshu Nema',
-      role: 'Co-Founder & Head of Product',
-      image: `${BASE_PATH}/images/pranshu-nema.jpg`,
-      bio: 'Skilled product developer and engineer with a background in creating efficient solutions. Experienced in leading technical teams and delivering innovative products.',
+      role: 'Co-Founder & Head of Research',
+      image: pranshuImage,
+      bio: 'Research-focused engineer with expertise in AI systems, speech and data analysis. Committed to developing cutting-edge solutions for complex technical challenges.',
       linkedin: 'https://www.linkedin.com/in/pranshu-nema/',
       email: 'pranshunema007@gmail.com'
     },
     {
       name: 'Meet Patel',
-      role: 'Co-Founder & Head of Research',
-      image: `${BASE_PATH}/images/meet-patel.jpg`,
-      bio: 'Research-focused engineer with expertise in AI systems and data analysis. Committed to developing cutting-edge solutions for complex technical challenges.',
+      role: 'Co-Founder & Head of Product',
+      image: meetImage,
+      bio: 'Skilled product developer and engineer with a background in creating efficient solutions. Experienced in leading technical teams and delivering innovative products.',
       linkedin: 'https://www.linkedin.com/in/meetdpatel18/',
       email: 'meetdpatel18@gmail.com'
     }
