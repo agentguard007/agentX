@@ -144,7 +144,7 @@ const ContactForm = () => {
                 Start monitoring today and build safer, more efficient AI agents.
               </p>
               <a
-                href="mailto:info@NeurAlign.ai"
+                href="mailto:agentguard007@gmail.com"
                 className="mt-6 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-blue-900 bg-white hover:bg-blue-50"
               >
                 Email Us Directly

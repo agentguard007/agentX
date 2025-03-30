@@ -47,8 +47,8 @@ const Footer = () => {
             <p className="text-gray-300 mb-4">
               Interested in NeurAlign? Reach out for a demo or with any questions.
             </p>
-            <a href="mailto:info@NeurAlign.ai" className="text-teal-400 hover:text-teal-300">
-              info@NeurAlign.ai
+            <a href="mailto:agentguard007@gmail.com" className="text-teal-400 hover:text-teal-300">
+              agentguard007@gmail.com
             </a>
           </div>
         </div>
